@@ -8,7 +8,6 @@ public class Artyst extends Skill{
     public Artyst(String name, Integer age, String alias) {
         super(name, age);
         this.alias = alias;
-        this.skill = new Skill(name,age).getSkill();
     }
 
     public String getSkill() {
