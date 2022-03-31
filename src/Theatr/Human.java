@@ -2,7 +2,7 @@ package Theatr;
 
 public class Human {
 
-    private String name;
+    private final String name;
     private Integer age;
 
 public Human(String name, Integer age) {
