@@ -19,7 +19,7 @@ public Human(String name, Integer age) {
     }
 
     public void setAge(Integer age) {
-       if (age < 0 || age == null){
+       if (age < 0){
             this.age = 0;
         }else
             this.age = age;
