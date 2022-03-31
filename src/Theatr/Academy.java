@@ -9,6 +9,4 @@ public interface Academy {
         System.out.println("Псевдоним будущего актера: ");
         return new Artyst(human.getName(), human.getAge(), sc.nextLine());
     }
-
-
 }

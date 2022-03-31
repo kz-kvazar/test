@@ -3,7 +3,7 @@ package Theatr;
 public class Artyst extends Skill{
 
     private final String alias;
-    private final String skill;
+
 
     public Artyst(String name, Integer age, String alias) {
         super(name, age);
