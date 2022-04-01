@@ -5,8 +5,29 @@ public class Skill extends Human {
 
     public Skill(String name, Integer age) {
         super(name, age);
-        String[] skills = new String[] {"петь в опере", "играть рок", "танцевать диско", "танцевать в балете", "играть на гитаре","играть на барабане"};
-        this.skill = skills[(int)Math.floor(Math.random()*(5+1))];
+        int digit  =(int)Math.floor(Math.random()*(5+1));
+        String result = "";
+        switch (digit) {
+            case 0 :
+                result = "петь в опере";
+                break;
+            case 1 :
+                result = "играть рок";
+                break;
+            case 2 :
+                result = "танцевать диско";
+                break;
+            case 3 :
+                result = "танцевать в балете";
+                break;
+            case 4 :
+                result = "играть на гитаре";
+                break;
+            case 5 :
+                result = "играть на барабане";
+                break;
+        }
+        this.skill = result;
     }
 
     public String getSkill() {
