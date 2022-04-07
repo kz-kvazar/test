@@ -22,10 +22,10 @@ public class InOut {
 
         String leDu = sc.nextLine().replaceAll(",", ".");
         leDu = leDu.replaceAll("[^0-9.]", "");
-        if (!leDu.isEmpty()){
+        if (!leDu.isEmpty()) {
             lenghtsTree = Double.parseDouble(leDu);
         }
-        if (lenghtsTree > 1.5){
+        if (lenghtsTree > 1.5) {
             return lenghtsTree;
         } else {
             return 1.5;

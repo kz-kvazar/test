@@ -2,8 +2,8 @@ package tree;
 
 public class Wood {
 
-    private String nam;
-    private double leg;
+    private final String nam;
+    private final double leg;
 
     public Wood(String na, double le) {
         this.nam = na;

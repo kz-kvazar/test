@@ -20,6 +20,6 @@ public class CountLetter {
                 space += 1;
             }
         }
-        System.out.println("В сторке " + leter + " букв, " + numb + " цифр, " + space + " пробелов" );
+        System.out.println("В сторке " + leter + " букв, " + numb + " цифр, " + space + " пробелов");
     }
 }
