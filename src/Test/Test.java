@@ -1,15 +1,14 @@
 package Test;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
 
 public class Test extends CountLetter {
 
     public static final String bug = "bug";
 
     public static void main(String[] args) {
-
-
+        //Collections.r
         ArrayList<String> words = new ArrayList<>();
         words.add("Hello world!");
         words.add("Amigo");
@@ -19,6 +18,7 @@ public class Test extends CountLetter {
         words.add("bug");
         words.add("Easy ug");
         words.add("Risha");
+
 
         ArrayList<String> copyWordsFirst = new ArrayList<>(words);
         ArrayList<String> copyWordsSecond = new ArrayList<>(words);
@@ -51,13 +51,7 @@ public class Test extends CountLetter {
 
     public static void removeBugWithWhile(ArrayList<String> list) {
         //напишите тут ваш код
-        Iterator<String> it = list.iterator();
-        while (it.hasNext()) {
-            String str = it.next();
-            if (bug.equalsIgnoreCase(str)) {
-                it.remove();
-            }
-        }
+        list.removeIf(bug::equalsIgnoreCase);
     }
 
     public static void removeBugWithCopy(ArrayList<String> list) {
@@ -69,8 +63,22 @@ public class Test extends CountLetter {
 
             }
         }
+
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("Серега", 21);
+        map.put("Николай", 22);
+        map.put("Иван Петрович", 48);
+        map.put("Анюта", null);
+
+        for (String key: map.keySet())
+        {
+            Integer value = map.get(key);
+            System.out.println(key + " --> " + value);
+        }
+
     }
 }
+
 
 
 
